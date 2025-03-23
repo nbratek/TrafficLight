@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="IntersectionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-03-23T21:49:25" hostname="LAPTOP-LLFF3LOJ" time="0.311">
+  <properties/>
+  <testcase name="testProcessStep()" classname="IntersectionTest" time="0.311"/>
+  <system-out><![CDATA[Added vehicle vehicle1 on road north
+Added vehicle vehicle2 on road south
+Vehicle removed from Lane[1, 2]
+Vehicle removed from Lane[1, 2]
+Aktualna grupa: NS, stan cyklu: GREEN
+Added vehicle vehicle3 on road east
+Added vehicle vehicle4 on road west
+Aktualna grupa: NS, stan cyklu: GREEN
+Aktualna grupa: NS, stan cyklu: GREEN_ARROW
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

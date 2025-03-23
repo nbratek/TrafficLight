@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="model.SimulationPresenter"
+            prefWidth="800" prefHeight="600">
+
+    <!-- Strap with buttons on top -->
+    <top>
+        <HBox spacing="10" style="-fx-padding: 10; -fx-alignment: center;">
+
+            <Button text="step" onAction="#onStepClick"/>
+        </HBox>
+    </top>
+
+    <!-- Main drawing space of the intersection -->
+    <center>
+        <AnchorPane fx:id="rootPane" stylesheets="@styles.css">
+            <StackPane fx:id="infoPane" layoutX="300" layoutY="250">
+                <Text fx:id="infoText" styleClass="info-text" text="Intersection"/>
+            </StackPane>
+        </AnchorPane>
+    </center>
+</BorderPane>
